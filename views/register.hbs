@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <video autoplay muted loop plays-inline class="back-video">
+        <source src="/images/B7.webm">
+    </video>
+     <nav>
+        <img src = "images/bird2.png">
+        <div class="web-name"> Fly High </div>
+        <!-- SHORTCUT: ul>li*4>a{menu} -->
+        <ul>
+            <li><a href="/" class="nav">HOME</a></li>
+            <li><a href="/book" class="nav">BOOK</a></li>
+            <li><a href="/contact" class="nav">CONTACT</a></li>
+            <li><a href="/profile" class="nav">PROFILE</a></li>
+            <li><a href="/login" class="nav">LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <div class="text"> REGISTRATION </div>
+    {{#if msg}}
+    <p class="err">{{msg}}</p>
+    {{/if}}
+    <form action="/auth/register" method="post"> 
+        <div class="data">
+            <label for="name">Full Name</label>
+            <input type="name" name = "name" id="name">
+        </div>
+        <div class="data">
+            <label for="email">Email</label>
+            <input type="email " name = "email" id="email">
+        </div>
+        <div class="data">
+            <label for="password">Password</label>
+            <input type="password" name = "password" id="password">
+        </div>
+        <div class="data">
+            <label for="password">Confirm Password</label>
+            <input type="password" name = "confirm_password" id="password">
+        </div>
+        <div class="btn">
+            <button type="submit">Sign In</button>
+        </div>
+        <div class="signup-link">
+            Already a Member?
+            <a href="/login" class ="lobtn" >login Now</a>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

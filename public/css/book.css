@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Unbounded:wght@300&display=swap');
+body
+{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+*
+{
+   margin: 0;
+   padding: 0;
+}
+img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-left: 0;
+    
+  }
+.web-name
+{
+    color: white;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+nav{
+    margin-top: 10px;
+    background-image: none;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    justify-content: space-evenly;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+   
+}
+nav ul li{
+    list-style: none;
+    padding: 8px;
+    margin-right:  50px; 
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    background-color: black;
+    color:white
+}
+
+
+#map {
+  height: 70vh;
+  width: 45vw;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  border-style: solid;
+  border-color:white;
+  border-width: 3px;
+  border-radius: 30px;
+}
+#box{
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  border: 15px solid ;
+  border-color: white;
+  border-radius: 45px;
+  padding: 70px;
+  margin: 20px;
+  border-width: 3px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica;
+
+}
+#main
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 30px;
+}
+#title
+{
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0.912);
+  font-family: Impact;
+
+}
+.Title
+{
+    color: white;
+    font-size: 30px;
+    font-family:'Unbounded', cursive; 
+} 
+.i1
+{
+   margin-left: 10px;
+   margin-top: 35px;  
+   font-family:'Unbounded', cursive; 
+   font-size: 19px;
+}
+.i2
+{
+  margin-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-family:'Unbounded', cursive; 
+  font-size: 19px;
+}
+  
+
+.input
+{
+  border-color: rgba(255, 255, 255, 0.037);
+  border-style: solid;
+  border-width: 1px;
+}
+.btn
+{
+  
+  margin-top: 40px;
+  background-color: white;
+  border-style: solid;
+  color: black;
+  border-color: rgba(0, 0, 0, 0.769);
+  height: 38px;
+  width: 100px;
+  font-size: 15px;
+}
+.btn:hover{
+  background-color: black;
+  cursor: pointer;
+  border: solid white;
+  color: white;
+  font-size: 20px;
+}
+.src
+{
+  margin-right: 180px;
+}
+.ph
+{
+   color: white;
+    font-family:'Unbounded', cursive; 
+   font-size: 19px;
+}
+.geocoder {
+
+width: 5px;
+
+margin-left: -70px;
+padding: 20px;
+  font-size: 30px;
+  text-align: center;
+
+}
+.mapboxgl-ctrl-geocoder {
+min-width: 100%;
+}
+.des
+{
+  color: white;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.child-container
+{
+  display: grid;
+  grid-template-rows: auto auto;
+  padding: 10px;
+
+}
+.nav{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.nav:hover{
+  background-color: white;
+  color: black;
+}
+.date{
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+.back-video
+{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+@media(max-aspect-ratio:16/9)
+{
+    .back-video
+    {
+        width: auto;
+        height: 100%;
+    }
+}

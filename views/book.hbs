@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticketbooking.com</title>
+    <link rel="stylesheet" href="css/book.css">
+<script defer src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+<script defer type="module" src = "/css/map.js"></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+<script defer src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+<script  type="text/javascript" defer src="mapss/map.js"></script>
+
+
+</head>
+<body>
+  <video autoplay muted loop plays-inline class="back-video" id ="myVideo">
+        <source src="/images/backvideo.mp4">
+    </video>
+  <div class="nav-container">
+    <nav>
+        <img src = "images/bird2.png">
+        <div class="web-name"> Fly High
+        </div>
+        <!-- SHORTCUT: ul>li*4>a{menu} -->
+        <ul>
+            <li><a href="/" class="nav">HOME</a></li>
+            <li><a href="/contact" class="nav">CONTACT</a></li>
+            <li><a href="/profile" class="nav">PROFILE</a></li>
+            <li><a href="/login" class"nav">LOGIN</a></li>
+
+        </ul>
+    </nav>
+</div>
+  <div id="main">
+    <div id='map'></div>
+    <div id = "box">
+      <h3 class="Title"> ENTER YOUR DETAILS</h3>
+      <p class="ph"> Phone no<input class = "i1 input" id ="phone" type="number" ><p>
+      <p class ="ph">Name<input class="i2 input" id ="pass_name" type="text"></p>
+      <div class= "child-contianer">
+      <div class="des" id="geo">From:</div>
+       <div id="geocoder" class="geocoder"></div>
+      <div class = "des" id ="des">To:</div>
+      <div id="geocoder" class="geocoder"></div>
+      </div>
+      <div class="date">DATE:<input type="date" placeholder="enter your date of travel"></div>
+     <button ><a href="/seat" > Proceed </a></button>
+    
+    </div>
+    </div>
+   
+   </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins&family=Rubik+80s+Fade&family=Unbounded:wght@300&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: 	#e9e9e9;
+    width: 430px;
+    padding: 20px;
+    display: block;
+}
+.container .text
+{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: -10px;
+    color: black;
+    margin-bottom: -30px;
+}
+.container form .data
+{
+    height: 30px;
+    width: 100%;
+    margin: 40px 0;
+}
+form .data input
+{
+    height: 100%;
+    width: 100%;
+}
+form .btn button
+{
+   background-color: rgba(165, 42, 42, 0.277);
+   width: 100%;
+   height: 100%;
+   border: none;
+   height: 50px;
+   font-size: 23px;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   text-align: center;
+}
+.btn button:hover{
+    cursor: pointer;
+    padding:0;
+    background-color: rgba(165, 42, 42, 0.852);
+    font-size: 38px;
+
+}
+.back-video
+{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+@media(max-aspect-ratio:16/9)
+{
+    .back-video
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+nav{
+    margin-top: 20px;
+    background-image: none;
+    background-color: none;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    justify-content: space-evenly;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+   
+}
+nav ul li{
+    list-style: none;
+    padding: 8px;
+    margin-right:  50px; 
+    
+}
+.nav{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    background-color: black;
+    font-size: 20px;
+}
+.nav:hover
+{
+    background-color: white;
+    color:black;
+}
+img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-left: 0;
+    
+  }
+  .signup-link
+  {
+    margin-top: 20px;
+  }
+  .web-name
+{
+    color: white;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    background-color: black;
+}
+.err
+{
+    margin-top: 50px;
+}

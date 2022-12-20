@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyHigh.in</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+<div class="nav-container">
+    <nav>
+        <img src = "images/bird2.png">
+        <div class="web-name"> Fly High </div>
+        <!-- SHORTCUT: ul>li*4>a{menu} -->
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/book">BOOK</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/profile">PROFILE</a></li>
+            <li><a href="/login">LOGIN</a></li>
+            <li><a href="#">LOGOUT</a></li>
+
+        </ul>
+       
+    </nav>
+    <div class="offer">
+        <marquee>
+            <p>
+                GRAB YOUR FLIGHT TICKETS RIGHT NOW!
+        </p>
+    </marquee>
+    </div>
+    <video autoplay muted loop plays-inline class="back-video" id ="myVideo"
+         src="/images/b7.webm#t=60,360">
+    </video>
+    
+</div>
+</body>
+<script>
+const vid = document.getElementById("myVideo");
+
+function getPlaySpeed() { 
+  console.log(vid.playbackRate);
+} 
+
+function setPlaySpeed() { 
+  vid.playbackRate = 100.25;
+} 
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/seat.css">
+    <script type="module">
+    import {sourcedes} from './css/map.js';
+    function update()
+    {
+       console.log(sourcedes);
+    }
+    </script>
+<body>
+   
+    <nav>
+        <img src = "images/bird2.png">
+        <div class="web-name"> Fly High
+        </div>
+        <!-- SHORTCUT: ul>li*4>a{menu} -->
+        <ul>
+            <li><a href="/" class="nav">HOME</a></li>
+            <li><a href="/contact" class="nav">CONTACT</a></li>
+            <li><a href="/profile" class="nav">PROFILE</a></li>
+           
+        </ul>
+    </nav>
+    
+    <div class="det-container">
+        <button onclick="update()">clickme</button>
+      <div class="src" id="from">CHENNAI</div>
+      <div class="src" id="to">BANGALORE</div>
+    </div>
+    <div class="flight-container">
+        
+    </div>
+    
+</body>
+
+</html>
